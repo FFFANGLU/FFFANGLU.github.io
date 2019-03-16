@@ -1,0 +1,358 @@
+body {
+  cursor: pointer;
+}
+p {
+  color: #fff;
+  line-height: 1.5em !important;
+}
+a {
+  color: darkblue !important;
+}
+@keyframes backgroundmove {
+  from {
+    background-position: -300px;
+  }
+  to {
+    background-position: 500px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.job {
+  font-size: 32px !important;
+}
+#name {
+  font-size: 80px;
+}
+.title {
+  font-size: 58px !important;
+  font-weight: 600;
+}
+#school {
+  font-size: 30px;
+}
+.text-relief {
+  text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9 !important;
+}
+.text-shadow {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) !important;
+}
+#subtitle span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  background: -webkit-linear-gradient(-50deg, rgba(255, 255, 255, 0) 100px, rgba(255, 255, 255, 0.2) 105px, #ffffff 110px, #ffffff 120px, rgba(255, 255, 255, 0.2) 130px, rgba(255, 255, 255, 0) 135px) -300px 0 no-repeat;
+  -webkit-background-clip: text;
+  animation: 5s backgroundmove infinite;
+}
+.skill {
+  height: 50px !important;
+  margin: 10px 0 !important;
+}
+.skill span {
+  border: 1px solid #37ddc4;
+  border-radius: 5px;
+  display: inline-block;
+  background: #096254;
+  height: 36px;
+  line-height: 36px;
+  font-size: 22px !important;
+  padding: 0 .5em;
+  margin: 0 .3em;
+}
+.skill .level1 {
+  background: #096254;
+}
+.skill .level2 {
+  background: #1e7a6b;
+}
+.skill .level3 {
+  background: #218d7d;
+}
+.skill .level4 {
+  background: #3b9e8e;
+}
+.fadeInUp {
+  animation: .75s fadeInUp;
+  animation-fill-mode: both;
+}
+.bounce {
+  animation-name: bounceIn;
+  transform-origin: center bottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media screen and (min-width: 800px) {
+  #avatar {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #aee2d9;
+    border-radius: 50%;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .projectall {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .projectall .project {
+    float: left;
+    width: 44%;
+    height: 200px;
+    padding: 2% !important;
+    margin: 1% !important;
+    font-size: 20px !important;
+    transition: .8s;
+  }
+  .projectall .project:hover {
+    box-shadow: 0 0 4px 2px #297162;
+    transform: translate(0, -5px);
+    border-radius: 4px;
+  }
+  .projectall .project h4 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .projectall .project p {
+    text-align: left;
+    text-indent: 2em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .experience {
+    width: 100%;
+    margin: 36px auto !important;
+    font-size: 20px !important;
+  }
+  .experience h4 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .experience small {
+    font-size: 20px;
+    color: #fff;
+  }
+  .experience p {
+    text-align: left;
+    text-indent: 2em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #more {
+    margin: 80px auto;
+  }
+  #more p.content {
+    font-size: 24px;
+    text-align: left;
+    text-indent: 2em;
+  }
+  #more .email a {
+    font-size: 20px;
+    line-height: 1.5em;
+    display: block;
+    color: darkblue !important;
+  }
+  #more .btn {
+    display: inline-block;
+    background-color: #198075;
+    color: #fff!important;
+    border: 0;
+    border-radius: 4px;
+    height: 44px;
+    line-height: 44px;
+    outline-style: none;
+    padding: 0 2rem;
+    font-size: 20px;
+    transition: .2s;
+  }
+  #more .btn:hover {
+    background-color: #08524a;
+  }
+}
+@media screen and (max-width: 800px) {
+  #avatar {
+    width: 500px;
+    height: 500px;
+    border: 20px solid #aee2d9;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.24), 0 34px 100px 0 rgba(0, 0, 0, 0.19);
+  }
+  #name {
+    font-size: 120px;
+  }
+  .job {
+    font-size: 60px !important;
+    margin: 30px 0;
+  }
+  #subtitle {
+    margin: 50px 0;
+  }
+  #subtitle span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 46px;
+    background: -webkit-linear-gradient(-50deg, rgba(255, 255, 255, 0) 100px, rgba(255, 255, 255, 0.2) 105px, #ffffff 110px, #ffffff 120px, rgba(255, 255, 255, 0.2) 130px, rgba(255, 255, 255, 0) 135px) -300px 0 no-repeat;
+    -webkit-background-clip: text;
+    animation: 5s backgroundmove infinite;
+  }
+  .title {
+    font-size: 100px !important;
+    font-weight: 600;
+    margin-bottom: 80px !important;
+  }
+  .email a {
+    font-size: 40px;
+    line-height: 1.5em;
+    display: block;
+    color: darkblue !important;
+    margin: 0px 0;
+  }
+  section {
+    margin-top: -200px !important;
+  }
+  p {
+    font-size: 30px !important;
+  }
+  .skill {
+    height: 100px !important;
+    margin: 36px 0 !important;
+  }
+  .skill span {
+    border: 1px solid #37ddc4;
+    border-radius: 5px;
+    display: inline-block;
+    background: #096254;
+    height: 66px;
+    line-height: 66px;
+    font-size: 36px !important;
+    padding: 0 .5em;
+    margin: 0 .3em;
+  }
+  .skill .level1 {
+    background: #096254;
+  }
+  .skill .level2 {
+    background: #1e7a6b;
+  }
+  .skill .level3 {
+    background: #218d7d;
+  }
+  .skill .level4 {
+    background: #3b9e8e;
+  }
+  .project-title {
+    margin-top: -360px !important;
+  }
+  .projectall {
+    width: 100%;
+    margin: -50px auto !important;
+  }
+  .projectall .project {
+    width: 80%;
+    height: 260px;
+    padding: 20px 20px;
+    margin: 10px auto !important;
+    font-size: 40px !important;
+    transition: .8s;
+  }
+  .projectall .project:hover {
+    box-shadow: 0 0 10px 8px #297162;
+    transform: translate(0, -5px);
+    border-radius: 16px;
+  }
+  .projectall .project h4 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .projectall .project p {
+    text-align: left;
+    text-indent: 2em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .experience {
+    width: 80%;
+    margin: 58px auto !important;
+    font-size: 40px !important;
+  }
+  .experience h4 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .experience small {
+    font-size: 36px;
+    color: #fff;
+  }
+  .experience p {
+    text-align: left;
+    text-indent: 2em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #more {
+    width: 80%;
+    margin: 80px auto;
+  }
+  #more p.content {
+    font-size: 38px!important;
+    text-align: left;
+    text-indent: 2em;
+    margin-bottom: 60px!important;
+  }
+  #more .email a {
+    width: 100%;
+    font-size: 36px;
+    line-height: 1.5em;
+    display: block;
+    color: darkblue !important;
+  }
+  #more .btn {
+    display: inline-block;
+    background-color: #198075;
+    color: #fff!important;
+    border: 0;
+    border-radius: 8px;
+    height: 66px;
+    line-height: 66px;
+    outline-style: none;
+    margin-top: 60px;
+    padding: 0 2rem;
+    font-size: 30px;
+    transition: .2s;
+  }
+  #more .btn:hover {
+    background-color: #08524a;
+  }
+}
